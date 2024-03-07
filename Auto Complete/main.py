@@ -3,7 +3,7 @@ import random
 import numpy as np
 import pandas as pd
 import nltk
-# nltk.data.path.append('.')
+nltk.data.path.append('.')
 
 with open("en_US.twitter.txt", "r", encoding='cp437') as f:
     data = f.read()
@@ -803,4 +803,3 @@ tmp_suggest8 = get_suggestions(previous_tokens, n_gram_counts_list, vocabulary, 
 
 print(f"The previous words are {previous_tokens}, the suggestions are:")
 # display(tmp_suggest8)
-print(tmp_suggest8)
